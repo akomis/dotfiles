@@ -1,0 +1,70 @@
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1418,
+       "width": 2560,
+       "x": 0,
+       "y": 22
+    },
+    "name": "Project — ~/projects — Atom",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^Atom$",
+        "instance": "^atom$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1418,
+               "width": 2560,
+               "x": 0,
+               "y": 0
+            },
+            "name": "DuckDuckGo — Privacy, simplified. - Mozilla Firefox",
+            "percent": 0.58,
+            "swallows": [
+               {
+                "class": "^firefox$",
+                "instance": "^Navigator$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 628,
+               "width": 964,
+               "x": 0,
+               "y": 0
+            },
+            "name": "akomis01@arch:~/projects",
+            "percent": 0.42,
+            "swallows": [
+               {
+                "class": "^Termite$",
+                "instance": "^w3t1$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}

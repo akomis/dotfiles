@@ -1,0 +1,30 @@
+*.foreground:   #EEFFFF
+*.background:   #0D0D0D
+*.cursor:       #FFB3BF
+
+! Colors 0-15
+! Normal
+
+!Background
+*.color0:  #0D0D0D
+!Foreground
+*.color1:  #EEFFFF
+*.color2:  #FF5370
+*.color3:  #FFCCD4
+*.color4:  #D5334E
+!Secondary
+*.color5:  #D45748
+!Primary
+*.color6:  #D5203E
+!Gray
+*.color7:  #333333
+
+! Bold
+*.color8:  #0D0D0D
+*.color9:  #EEFFFF
+*.color10: #FF5370
+*.color11: #FFCCD4
+*.color12: #D5334E
+*.color13: #D45748
+*.color14: #D5203E
+*.color15: #333333

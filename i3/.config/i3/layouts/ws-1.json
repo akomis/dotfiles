@@ -1,0 +1,41 @@
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 724,
+       "width": 1044,
+       "x": 0,
+       "y": 0
+    },
+    "name": "akomis01@arch:~",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Termite$",
+       "instance": "w1left"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 724,
+       "width": 1044,
+       "x": 0,
+       "y": 0
+    },
+    "name": "akomis01@arch:~",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Termite$",
+       "instance": "w1right"
+       }
+    ],
+    "type": "con"
+}
