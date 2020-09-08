@@ -8,7 +8,7 @@ such as
 - polybar
 and others
 
-# Config Replication
+## Config Replication
 If you wish to replicate this setup on your machine follow these procedures
 
 - Acquire dependencies
