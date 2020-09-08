@@ -8,6 +8,8 @@ such as
 - polybar
 and others
 
+This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
+
 ## Config Replication
 If you wish to replicate this setup on your machine follow these procedures
 
