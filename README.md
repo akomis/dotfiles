@@ -1,13 +1,12 @@
 # dotfiles
-Various Configuration Files for Linux programs
-such as
+Various Configuration Files for Linux programs such as
 - i3
 - vim
 - cava
 - dunst
 - termite
 - polybar
-- neofetch
+- neofetch  
 and others
 
 This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
