@@ -5,7 +5,9 @@ such as
 - vim
 - cava
 - dunst
+- termite
 - polybar
+- neofetch
 and others
 
 This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
