@@ -180,9 +180,9 @@ bindsym $mod+Shift+c exec gnome-calculator
 bindsym ctrl+d exec "/bin/null"
 
 # Workspace assignments
-for_window [class="Spotify"] move to workspace $ws10
 for_window [class="Signal Beta"] move to workspace $ws5
-
+for_window [class="Microsoft Teams - Preview"] move to workspace $ws6
+for_window [class="Spotify"] move to workspace $ws10
 
 # Floating for certain windows
 for_window [title="Calculator"] floating enable
