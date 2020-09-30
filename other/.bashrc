@@ -11,7 +11,7 @@ alias c="cd ~/.config;ls"
 alias ls="ls --color=auto --group-directories-first"
 alias lsm="ls -alth"
 alias sizes="du -h --max-depth=1 | sort -hr"
-alias usys="yay"
+alias usys="yes | yay"
 alias m="cd ~/music/personal;ls"
 alias p="cd ~/projects;ls"
 alias uni="cd ~/documents/uni;ls"
@@ -28,7 +28,7 @@ alias vpnstart="sudo systemctl start openvpn-client@client.service"
 alias vpnstop="sudo systemctl stop openvpn-client@client.service"
 
 # Current Working Path
-export CWP="$HOME/projects/" 
+export CWP="$HOME/projects/uni/epl445/labex2" 
 alias cwp="cd $CWP"
 alias run=""
 alias snd=""
@@ -45,5 +45,4 @@ export C7="$(tput setaf 7)"
 export RESET="$(tput sgr0)"
 export BOLD="$(tput bold)"
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
-
 
