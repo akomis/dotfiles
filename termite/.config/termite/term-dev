@@ -1,4 +1,4 @@
 #!/bin/bash
 cd $CWP
-cat $HOME/projects/.todo
+nl $HOME/projects/.todo
 $SHELL -i
