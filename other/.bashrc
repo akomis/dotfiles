@@ -29,7 +29,7 @@ alias vpnstart="sudo systemctl start openvpn-client@client.service"
 alias vpnstop="sudo systemctl stop openvpn-client@client.service"
 
 # Current Working Path
-export CWP="$HOME/projects/uni/ade/" 
+export CWP="$HOME/projects/uni/epl450/project" 
 alias cwp="cd $CWP"
 alias run=""
 alias snd=""

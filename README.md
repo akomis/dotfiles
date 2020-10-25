@@ -18,7 +18,7 @@ If you wish to replicate this setup on your machine follow these procedures
 `sudo pacman -S git stow`
 
 - Clone a fork of this repository to your home directory  
-`cd && git clone [your fork repository]`
+`cd && git clone [this repository]`
 
 - Run stow inside the dotfiles directory  
 `cd dotfiles && stow *`
