@@ -29,8 +29,9 @@ alias vpnstart="sudo systemctl start openvpn-client@client.service"
 alias vpnstop="sudo systemctl stop openvpn-client@client.service"
 
 # Current Working Path
-export CWP="$HOME/projects/uni/epl450/project" 
+export CWP="$HOME/projects/uni/epl450/labex3" 
 alias cwp="cd $CWP"
+alias pyuic="pyuic5 -o interface.py interface.ui"
 alias run=""
 alias snd=""
 
