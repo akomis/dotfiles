@@ -10,6 +10,7 @@ export TERMINFO="/usr/lib/terminfo"
 export TERM="xterm-color"
 export BROWSER="firefox"
 export BACKUP="/mnt/hdd/backup"
+export CLOUD="/mnt/hdd/nextcloud"
 export READER="zathura"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
