@@ -176,4 +176,4 @@ for_window [class="Spotify"] move to workspace $ws10
 for_window [title="Calculator"] floating enable
 for_window [title="Volume Control"] floating enable
 
-exec_always --no-startup-id ~/projects/scripts/startup
+exec_always --no-startup-id ~/projects/scripts/startup > $HOME/.startup.log
