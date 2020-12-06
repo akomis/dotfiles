@@ -10,11 +10,11 @@ export TERMINFO="/usr/lib/terminfo"
 export TERM="xterm-color"
 export BROWSER="firefox"
 export BACKUP="/mnt/hdd/backup"
-export CLOUD="$HOME/nextcloud"
+export CLOUD="$HOME/next"
 export READER="zathura"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx 2> /dev/null 
+  exec startx 2> /dev/null
 fi
