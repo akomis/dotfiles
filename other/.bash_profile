@@ -3,7 +3,7 @@
 # Profile file. Runs on login.
 #
 
-export PATH="$PATH:$HOME/projects/scripts:$HOME/.config/termite:/.local/bin:$HOME/anaconda3/bin:$HOME/pycharm/bin"
+export PATH="$PATH:$HOME/projects/scripts:$HOME/.config/termite:/.local/bin:$HOME/anaconda3/bin:$HOME/pycharm/bin:/home/akomis01/.local/bin"
 export EDITOR="vim"
 export TERMINAL="termite"
 export TERMINFO="/usr/lib/terminfo"
