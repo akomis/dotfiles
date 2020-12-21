@@ -30,9 +30,8 @@ alias vpnstart="sudo systemctl start openvpn-client@client.service"
 alias vpnstop="sudo systemctl stop openvpn-client@client.service"
 
 # Current Working Path
-export CWP="$HOME/projects/uni/ade/src" 
+export CWP="$HOME/projects/uni/ade/src"
 alias cwp="cd $CWP"
-alias pyuic="pyuic5 -o interface.py interface.ui"
 alias run=""
 alias snd=""
 
@@ -48,4 +47,3 @@ export C7="$(tput setaf 7)"
 export RESET="$(tput sgr0)"
 export BOLD="$(tput bold)"
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
-
