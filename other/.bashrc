@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 #
 
@@ -24,7 +23,7 @@ alias sc="cd ~/projects/scripts;ls"
 alias brc="vim ~/.bashrc"
 alias ptd="vim ~/projects/.todo"
 alias csh="cd ~/documents/cheatsheets;ls"
-alias ade="cd ~/projects/uni/ade"
+alias ade="cd ~/projects/ade"
 alias thc="cd ~/projects/thc"
 alias hdd="cd /mnt/hdd; ls"
 alias bu="cd $BACKUP"
@@ -34,7 +33,7 @@ alias vpnstart="sudo systemctl start openvpn-client@client.service"
 alias vpnstop="sudo systemctl stop openvpn-client@client.service"
 
 # Current Working Path
-export CWP="$HOME/projects/uni/ade/src"
+export CWP="$HOME/projects/thc/dev/api"
 alias cwp="cd $CWP"
 alias run=""
 alias snd=""
