@@ -86,8 +86,8 @@ font-4 = "Weather Icons:style=bold:size=8;2"
 
 modules-left = i3 prev spotify next
 modules-center = weather date
-modules-right = wired-network filesystem memory cpu temperature
-;wireless-network
+modules-right = wireless-network filesystem memory cpu temperature
+;wired-network
 
 
 ;================================== MODULES ===================================
