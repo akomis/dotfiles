@@ -16,9 +16,6 @@ export VIEWER="feh"
 
 
 # Shortcut variables
-export CWP="$THCD/api"
-export RUN=""
-export SND=""
 export BRC="$HOME/.bash_profile"
 export BU="/mnt/hdd/backup"
 export CLOUD="$HOME/nextcloud"
@@ -37,36 +34,6 @@ export THCDOCS="$HOME/projects/thc/docs"
 export THCPICS="$HOME/projects/thc/pics"
 export VIDS="$HOME/videos"
 export THCSERVER="thehotcharcoalers.com"
-
-
-# Aliases
-alias feh="feh -d"
-alias f="firefox"
-alias ls="ls --color=auto --group-directories-first"
-alias lsm="ls -alth"
-alias sizes="du -h --max-depth=1 | sort -hr"
-alias gotop="gotop -a -c solarized16-dark"
-alias brc="$EDITOR $BRC"
-alias bu="cd $BACKUP"
-alias cloud="cd $CLOUD"
-alias docs="cd $DOCS"
-alias dots="cd $DOTS"
-alias dw="cd $DW"
-alias m="cd $M"
-alias p="cd $P"
-alias pics="cd $PICS"
-alias prof="$EDITOR $PROF"
-alias rp=". $PROFILE"
-alias sc="cd $SC"
-alias scr="cd $SCR"
-alias sshthc="ssh root@$THCSERVER"
-alias thc="cd $THC"
-alias thcd="cd $THCD"
-alias thcdocs="cd $THCDOCS"
-alias thcpics="cd $THCPICS"
-alias usys="yes | yay"
-alias vids="cd $VIDS"
-alias sp=". $PROF"
 
 
 # Prompt Configuration
