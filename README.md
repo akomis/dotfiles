@@ -5,6 +5,7 @@ Various configuration files for Linux programs such as
 - bash
 - cava
 - dunst
+- picom
 - polybar
 - neofetch
 - alacritty  
