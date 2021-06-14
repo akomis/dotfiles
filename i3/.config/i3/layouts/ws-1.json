@@ -8,13 +8,13 @@
        "x": 0,
        "y": 0
     },
-    "name": "w1left",
+    "name": "w1t1",
     "percent": 0.5,
     "swallows": [
        {
         "class": "^Alacritty$",
         "instance": "^Alacritty$",
-        "title": "w1left"
+        "title": "w1t1"
        }
     ],
     "type": "con"
@@ -29,13 +29,13 @@
        "x": 0,
        "y": 0
     },
-    "name": "w1right",
+    "name": "w1t2",
     "percent": 0.5,
     "swallows": [
         {
          "class": "^Alacritty$",
          "instance": "^Alacritty$",
-         "title": "w1right"
+         "title": "w1t2"
         }
     ],
     "type": "con"

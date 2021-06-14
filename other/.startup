@@ -6,16 +6,16 @@ loadLayout () {
 
     #  ws-1
     i3-msg 'workspace 1; append_layout ~/.config/i3/layouts/ws-1.json'
-    alacritty --title "w1left" -e $SHELL -c 'status; $SHELL -i'&
-    alacritty --title "w1right" -e gotop -a -c solarized16-dark&
+    alacritty --title "w1t1" -e $SHELL -c 'status; $SHELL -i'&
+    alacritty --title "w1t2" -e gotop -a -c solarized16-dark&
 
     #  ws-2
-    i3-msg 'workspace 2; exec firefox https://akomis.webo.family/index.php/apps/calendar/dayGridMonth/now https://www.youtube.com/feed/subscriptions https://www.reddit.com/'&
+    firefox -P "default" --class="main" https://akomis.webo.family/index.php/apps/calendar/dayGridMonth/now https://www.youtube.com/feed/subscriptions https://www.reddit.com/&
 
     #  ws-3
     i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
     atom&
-    i3-msg 'workspace 3; exec firefox'&
+    firefox -P "dev" --class="dev" https://github.com/akomis&
     alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
     #  ws-4
@@ -36,7 +36,7 @@ loadLayout () {
 }
 
 # Startup programs
-picom&
+picom -b&
 dunst -config ~/.config/dunst/dunstrc&
 tunefans 0 0 3 0 0 00FF00 5&
 udiskie&

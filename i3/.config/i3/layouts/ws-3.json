@@ -18,7 +18,6 @@
     ],
     "type": "con"
 }
-
 {
     "border": "normal",
     "floating": "auto_off",
@@ -36,12 +35,11 @@
                "x": 0,
                "y": 0
             },
-            "name": "DuckDuckGo — Privacy, simplified. - Mozilla Firefox",
+            "name": "dev",
             "percent": 0.58,
             "swallows": [
                {
-                "class": "^firefox$",
-                "instance": "^Navigator$"
+                "class": "^dev$"
                }
             ],
             "type": "con"
