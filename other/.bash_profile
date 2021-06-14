@@ -16,7 +16,7 @@ export VIEWER="feh"
 
 
 # Shortcut variables
-export BRC="$HOME/.bash_profile"
+export BRC="$HOME/.bashrc"
 export BU="/mnt/hdd/backup"
 export CLOUD="$HOME/nextcloud"
 export DOCS="$HOME/documents"
