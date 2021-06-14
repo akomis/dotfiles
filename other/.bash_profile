@@ -6,7 +6,7 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.config/termite"
 
 # Default programs
-export EDITOR="atom"
+export EDITOR="vim"
 export TERMINAL="termite"
 export TERMINFO="/usr/lib/terminfo"
 export TERM="xterm-color"

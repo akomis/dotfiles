@@ -176,4 +176,4 @@ for_window [class="Spotify"] move to workspace $ws10
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
-exec_always --no-startup-id ~/projects/scripts/startup > $HOME/.startup.log
+exec_always --no-startup-id ~/.startup 2> $HOME/.startup.log
