@@ -25,6 +25,6 @@ If you wish to replicate this setup on your machine follow these procedures
 `cd && git clone THIS_REPOSITORY`  
 
 - Run stow inside the dotfiles directory  
-`cd dotfiles && stow *`
+`cd dotfiles && rm README.md && stow *`
 
 If a conflict error occurs delete all the conflicting files from your home directory and beyond.
