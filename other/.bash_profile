@@ -3,7 +3,7 @@
 # Profile file. Runs on login.
 #
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.config/termite"
+export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts"
 
 # Default programs
 export BROWSER="firefox"

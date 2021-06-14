@@ -167,13 +167,15 @@ bindsym $mod+Shift+c exec gnome-calculator
 bindsym ctrl+d exec "/bin/null"
 
 # Workspace assignments
+for_window [class="Thunderbird"] move to workspace $ws4
 for_window [class="Signal"] move to workspace $ws5
 for_window [class="Joplin"] move to workspace $ws6
-for_window [class="Microsoft Teams - Preview"] move to workspace $ws7
+for_window [class="Steam"] move to workspace $ws7
+for_window [title="cava"] move to workspace $ws9
 for_window [class="Spotify"] move to workspace $ws10
 
-# Floating for certain windows
+# Floating windows
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
-exec_always --no-startup-id ~/.startup 2> $HOME/.startup.log
+exec_always --no-startup-id $HOME/.startup 2> $HOME/.startup.log

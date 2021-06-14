@@ -8,17 +8,17 @@
        "x": 0,
        "y": 0
     },
-    "name": "akomis01@arch:~",
+    "name": "w1left",
     "percent": 0.5,
     "swallows": [
        {
-       "class": "^Termite$",
-       "instance": "w1left"
+        "class": "^Alacritty$",
+        "instance": "^Alacritty$",
+        "title": "w1left"
        }
     ],
     "type": "con"
 }
-
 {
     "border": "pixel",
     "current_border_width": 2,
@@ -29,13 +29,14 @@
        "x": 0,
        "y": 0
     },
-    "name": "akomis01@arch:~",
+    "name": "w1right",
     "percent": 0.5,
     "swallows": [
-       {
-       "class": "^Termite$",
-       "instance": "w1right"
-       }
+        {
+         "class": "^Alacritty$",
+         "instance": "^Alacritty$",
+         "title": "w1right"
+        }
     ],
     "type": "con"
 }

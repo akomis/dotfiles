@@ -56,12 +56,13 @@
                "x": 0,
                "y": 0
             },
-            "name": "akomis01@arch:~/projects",
+            "name": "w3t1",
             "percent": 0.42,
             "swallows": [
                {
-                "class": "^Termite$",
-                "instance": "^w3t1$"
+                "class": "^Alacritty$",
+                "instance": "^Alacritty$",
+                "title": "w3t1"
                }
             ],
             "type": "con"
