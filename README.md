@@ -11,14 +11,18 @@ and others
 
 This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
 
+<div align="center">
+    <img src="./.screenshot">
+</div>
+
 ## Config Replication
 If you wish to replicate this setup on your machine follow these procedures
 
 - Acquire dependencies  
 `sudo pacman -S git stow`
 
-- Clone a fork of this repository to your home directory  
-`cd && git clone [this repository]`
+- Clone this repository to your home directory  
+`cd && git clone THIS_REPOSITORY`  
 
 - Run stow inside the dotfiles directory  
 `cd dotfiles && stow *`
