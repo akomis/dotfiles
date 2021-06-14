@@ -6,12 +6,12 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.config/termite"
 
 # Default programs
-export EDITOR="vim"
-export TERMINAL="termite"
-export TERMINFO="/usr/lib/terminfo"
-export TERM="xterm-color"
 export BROWSER="firefox"
+export EDITOR="vim"
+export PLAYER="vlc"
 export READER="zathura"
+export TERMINAL="alacritty"
+export TERMINFO="/usr/lib/terminfo"
 export VIEWER="feh"
 
 
