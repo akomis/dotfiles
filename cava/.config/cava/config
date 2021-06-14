@@ -106,16 +106,17 @@ gradient = 1
 gradient_color_1 = '#8E0E0E'
 gradient_color_2 = '#D5334E'
 gradient_color_3 = '#FF5370'
-gradient_color_4 = '#FF5370'
-gradient_color_5 = '#FF5370'
-
+gradient_color_4 = '#FF667F'
+gradient_color_5 = '#FF98A9'
+gradient_color_6 = '#FFBFCA'
+gradient_color_7 = '#FFD4DB'
+gradient_color_8 = '#FFE8EC'
 
 
 [smoothing]
-
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-integral = 50
+integral = 75
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 ; monstercat = 1
@@ -125,13 +126,11 @@ integral = 50
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
 gravity = 150
 
-
 # In bar height, bars that would have been lower that this will not be drawn.
 ; ignore = 0
 
 
 [eq]
-
 # This one is tricky. You can have as much keys as you want.
 # Remember to uncomment more then one key! More keys = more precision.
 # Look at readme.md on github for further explanations and examples.
