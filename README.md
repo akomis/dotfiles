@@ -1,7 +1,8 @@
 # dotfiles
-Various Configuration Files for Linux programs such as
+Various configuration files for Linux programs such as
 - i3
 - vim
+- bash
 - cava
 - dunst
 - termite
