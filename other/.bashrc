@@ -11,7 +11,7 @@ export SND=""
 
 # Aliases
 alias feh="feh -d"
-alias f="firefox"
+alias b="$BROWSER"
 alias ls="ls --color=auto --group-directories-first"
 alias lsm="ls -alth"
 alias sizes="du -h --max-depth=1 | sort -hr"
