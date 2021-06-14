@@ -3,6 +3,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
+
 export CWP="$THCD/api"
 export RUN=""
 export SND=""

@@ -47,7 +47,7 @@ export C6="$(tput setaf 6)"
 export C7="$(tput setaf 7)"
 export RESET="$(tput sgr0)"
 export BOLD="$(tput bold)"
-export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
+
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
