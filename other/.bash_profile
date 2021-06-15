@@ -14,6 +14,7 @@ export TERMINAL="alacritty"
 export TERMINFO="/usr/lib/terminfo"
 export VIEWER="feh"
 export WALLPAPER="$HOME/.wallpaper"
+export LOCKSCREEN="$HOME/.lockscreen"
 
 
 # Shortcut variables

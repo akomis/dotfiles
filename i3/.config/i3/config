@@ -149,8 +149,8 @@ bindsym $mod+Up resize shrink height 2 px or 2 ppt
 bindsym $mod+Right resize grow width 2 px or 2 ppt
 
 # Custom key bindings
-bindsym $mod+shift+x exec i3lock --ignore-empty-password -i ~/pictures/wallpapers/lockscreen0.png -f
-bindsym $mod+shift+s exec flameshot gui -p ~/pictures/screenshots
+bindsym $mod+shift+x exec i3lock --ignore-empty-password -i $LOCKSCREEN -f
+bindsym $mod+shift+s exec flameshot gui -p $SCR
 bindsym $mod+shift+Escape exec shutdown -h now
 bindsym $mod+shift+F12 exec reboot
 bindsym $mod+d exec dmenu_run -i -fn "Noto Sans Mono:pixelsize=14" -nb "$bg" -nf "$fg" -sb "$pr" -sf "$fg"
