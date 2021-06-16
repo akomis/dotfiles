@@ -1,7 +1,10 @@
 #!/bin/bash
 
 loadLayout () {
+    # Set wallpaper
     feh --bg-scale $WALLPAPER&
+
+    # Start polybar
     . $HOME/.config/polybar/launch.sh&
 
     #  ws-1
