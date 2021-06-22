@@ -160,6 +160,7 @@ bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.
 bindsym $mod+shift+f exec $BROWSER -P "default" --class="firefox"
 bindsym $mod+shift+t exec $BROWSER https://translate.google.com/
 bindsym $mod+shift+a exec arch-wiki-search
+bindsym $mod+shift+o exec libreoffice
 bindsym $mod+shift+p exec pavucontrol
 bindsym $mod+Shift+c exec gnome-calculator
 
