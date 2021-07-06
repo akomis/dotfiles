@@ -5,11 +5,12 @@
 
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$THCD/api"
+export CWP="$THCD/front-page"
 export RUN=""
 export SND=""
 
 # Aliases
+alias cwp="cd $CWP"
 alias feh="feh -d"
 alias b="$BROWSER"
 alias ls="ls --color=auto --group-directories-first"
@@ -17,7 +18,7 @@ alias lsm="ls -alth"
 alias sizes="du -h --max-depth=1 | sort -hr"
 alias gotop="gotop -a -c solarized16-dark"
 alias pv="sudo protonvpn"
-alias pvf="sudo protonvpn c -f"
+alias pvc="sudo protonvpn c -f"
 alias pvd="sudo protonvpn d"
 alias brc="$EDITOR $BRC"
 alias bu="cd $BU"

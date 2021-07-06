@@ -25,7 +25,6 @@ margin-bottom = 0
 ;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
 throttle-output = 5
 throttle-output-for = 10
-throttle-input-for = 30
 screenchange-reload = true
 compositing-background = over
 compositing-foreground = over
@@ -46,16 +45,16 @@ format-offset =
 [colors]
 white = #EEFFFF
 black = #101010
-active = ${xrdb:color1:#D0D0D0}
-inactive = ${xrdb:color7:#3D3D3D}
+active = ${xrdb:color1:#EEFFFF}
+inactive = ${xrdb:color7:#333333}
 
 ; === System Theme ===
-foreground = ${xrdb:color3:#E0E0E0}
-background = ${xrdb:color0:#131313}
-primary = ${xrdb:color4:#C0025B}
-secondary = ${xrdb:color5:#12355b}
-underline = ${xrdb:color4:#222}
-alert = ${xrdb:color5:#FF0000}
+foreground = ${xrdb:color3:#FFCCD4}
+background = ${xrdb:color0:#0D0D0D}
+primary = ${xrdb:color4:#D5334E}
+secondary = ${xrdb:color5:#D45748}
+underline = ${xrdb:color4:#D5334E}
+alert = ${xrdb:color5:#D45748}
 
 [bar/topbar]
 enable-ipc = false
@@ -146,7 +145,7 @@ interval = 1
 
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
-label = %output%
+label = %output:40:40:...%
 format = <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
