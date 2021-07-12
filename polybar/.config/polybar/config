@@ -145,7 +145,7 @@ interval = 1
 
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
-label = %output:40:40:...%
+label = %output:1:40:...%
 format = <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
