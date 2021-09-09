@@ -41,7 +41,6 @@ loadLayout () {
 # Startup programs
 picom -b&
 dunst -config ~/.config/dunst/dunstrc&
-tunefans 0 0 3 0 0 00FF00 5&
 udiskie&
 nextcloud --background&
 

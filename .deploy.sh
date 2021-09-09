@@ -4,13 +4,23 @@ declare -a packages=(
 "alacritty"
 "atom"
 "dunst"
+"dmenu"
+"xorg-server"
+"xorg-xinit"
+"joplin-desktop"
+"pulseaudio"
+"pavucontrol"
+"neofetch"
 "feh"
 "ffmpeg-compat-57"
+"flat-remix"
+"flat-remix-gtk"
 "firefox"
 "flameshot"
-"flat-remix-gtk"
+"gotop"
 "gcolor2"
 "gnome-calculator"
+"gnome-keyring"
 "i3-gaps"
 "i3lock"
 "lxappearance"
@@ -25,21 +35,22 @@ declare -a packages=(
 "thunderbird"
 "ttf-liberation"
 "ttf-weather-icons"
+"ttf-font-awesome"
 "udiskie"
 "udisks2"
 "vim"
 "vlc"
-"xorg"
 "zathura"
-"zenity"
+"cava"
+"jq"
 )
 
 # Install dependencies
-sudo pacman -S base-devel git stow
+sudo pacman -S git stow
 
 # Install AUR helper (yay)
-cd /opt &&/
-sudo git clone https://aur.archlinux.org/yay.git &&/
+cd /opt &&\
+sudo git clone https://aur.archlinux.org/yay.git &&\
 sudo chown -R "$(whoami)":"$(id -gn "$(whoami)")" ./yay
 cd yay
 makepkg -si
