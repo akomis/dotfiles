@@ -18,8 +18,9 @@ export LOCKSCREEN="$HOME/.lockscreen"
 
 
 # Shortcut variables
+export HDD="/mnt/hdd"
 export BRC="$HOME/.bashrc"
-export BU="/mnt/hdd/backup"
+export BACKUP="$HDD/backup"
 export CLOUD="$HOME/nextcloud"
 export DOCS="$HOME/documents"
 export DOTS="$HOME/dotfiles"

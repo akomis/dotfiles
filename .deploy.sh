@@ -36,6 +36,11 @@ declare -a packages=(
 "tldr"
 "git"
 "stow"
+"rsync"
+"cronie"
+"dhcpcd"
+"reflector"
+"pacman-contrib"
 )
 
 declare -a aur_packages=(
@@ -49,6 +54,7 @@ declare -a aur_packages=(
 "ttf-weather-icons"
 "gotop"
 "cava"
+"protonvpn"
 )
 
 # Update system and repos
