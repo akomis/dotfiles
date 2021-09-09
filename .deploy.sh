@@ -7,17 +7,12 @@ declare -a packages=(
 "dmenu"
 "xorg-server"
 "xorg-xinit"
-"joplin-desktop"
 "pulseaudio"
 "pavucontrol"
 "neofetch"
 "feh"
-"ffmpeg-compat-57"
-"flat-remix"
-"flat-remix-gtk"
 "firefox"
 "flameshot"
-"gotop"
 "gcolor2"
 "gnome-calculator"
 "gnome-keyring"
@@ -28,25 +23,39 @@ declare -a packages=(
 "noto-fonts"
 "noto-fonts-emoji"
 "picom"
-"polybar"
-"protonmail-bridge"
 "signal-desktop"
-"spotify"
 "thunderbird"
 "ttf-liberation"
-"ttf-weather-icons"
 "ttf-font-awesome"
 "udiskie"
 "udisks2"
 "vim"
 "vlc"
 "zathura"
-"cava"
 "jq"
+"tldr"
+"git"
+"stow"
 )
 
-# Install dependencies
-sudo pacman -S git stow
+declare -a aur_packages=(
+"joplin-desktop"
+"polybar"
+"flat-remix"
+"flat-remix-gtk"
+"protonmail-bridge"
+"spotify"
+"ffmpeg-compat-57"
+"ttf-weather-icons"
+"gotop"
+"cava"
+)
+
+# Update system and repos
+sudo pacman -Syu
+
+# Install packages from official repos
+sudo pacman -S ${packages[@]}
 
 # Install AUR helper (yay)
 cd /opt &&\
@@ -55,13 +64,11 @@ sudo chown -R "$(whoami)":"$(id -gn "$(whoami)")" ./yay
 cd yay
 makepkg -si
 
-# Update system and repos
-sudo pacman -Syu
-
-# Install packages
-yay -S ${packages[@]}
+# Install AUR packages
+yay -S ${aur_packages[@]}
 
 # Setup configuration
+rm ~/.bashrc ~/.bash_profile
 cd && git clone https://github.com/akomis/dotfiles.git
 cd ~/dotfiles &&\
 for dir in *
@@ -71,3 +78,6 @@ do
         stow -v $dir
     fi
 done
+
+# Setup keyboard layout switch
+setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:alt_shift_toggle
