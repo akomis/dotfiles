@@ -41,6 +41,7 @@ declare -a packages=(
 "dhcpcd"
 "reflector"
 "pacman-contrib"
+"liquidctl"
 )
 
 declare -a aur_packages=(
@@ -73,7 +74,7 @@ makepkg -si
 # Install AUR packages
 yay -S ${aur_packages[@]}
 
-# Setup configuration
+# Setup configuration files
 rm ~/.bashrc ~/.bash_profile
 cd && git clone https://github.com/akomis/dotfiles.git
 cd ~/dotfiles &&\
@@ -84,6 +85,3 @@ do
         stow -v $dir
     fi
 done
-
-# Setup keyboard layout switch
-setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:alt_shift_toggle

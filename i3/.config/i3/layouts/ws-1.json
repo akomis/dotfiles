@@ -10,7 +10,7 @@
     },
     "marks": [],
     "name": "w1t1",
-    "percent": 0.42,
+    "percent": 0.36,
     "swallows": [
        {
        "class": "^Alacritty$",
@@ -32,7 +32,7 @@
     },
     "marks": [],
     "name": "w1t2",
-    "percent": 0.58,
+    "percent": 0.64,
     "swallows": [
        {
        "class": "^Alacritty$",
