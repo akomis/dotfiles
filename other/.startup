@@ -22,7 +22,6 @@ loadLayout () {
     alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
     #  ws-4
-    protonmail-bridge --noninteractive&
     thunderbird&
 
     #  ws-5
@@ -39,6 +38,7 @@ loadLayout () {
 }
 
 # Startup programs
+protonmail-bridge --noninteractive&
 picom -b&
 dunst -config ~/.config/dunst/dunstrc&
 udiskie&
