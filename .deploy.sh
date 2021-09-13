@@ -32,6 +32,7 @@ declare -a packages=(
 "vim"
 "vlc"
 "zathura"
+"zathura-pdf-poppler"
 "jq"
 "tldr"
 "git"
@@ -42,6 +43,7 @@ declare -a packages=(
 "reflector"
 "pacman-contrib"
 "liquidctl"
+"libreoffice"
 )
 
 declare -a aur_packages=(
