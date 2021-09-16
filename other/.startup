@@ -39,7 +39,7 @@ loadLayout () {
 
 # Startup programs
 protonmail-bridge --noninteractive&
-picom -b&
+picom -b --experimental-backend&
 dunst -config ~/.config/dunst/dunstrc&
 udiskie&
 nextcloud --background&
