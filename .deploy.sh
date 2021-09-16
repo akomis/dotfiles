@@ -44,6 +44,7 @@ declare -a packages=(
 "pacman-contrib"
 "liquidctl"
 "libreoffice"
+"nvidia"
 )
 
 declare -a aur_packages=(

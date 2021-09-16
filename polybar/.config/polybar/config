@@ -58,7 +58,7 @@ alert = ${xrdb:color5:#D45748}
 
 [bar/topbar]
 enable-ipc = false
-monitor = DP-1
+monitor = DP-2
 
 width = 100%
 height = 22
