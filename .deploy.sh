@@ -62,10 +62,10 @@ declare -a aur_packages=(
 )
 
 # Update system and repos
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 # Install packages from official repos
-sudo pacman -S ${packages[@]}
+sudo pacman -S ${packages[@]} --noconfirm
 
 # Install AUR helper (yay)
 cd /opt &&\

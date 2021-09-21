@@ -13,12 +13,12 @@ loadLayout () {
     alacritty --title "w1t2" -e gotop -a -c solarized16-dark&
 
     #  ws-2
-    firefox -P "main" --class="main" --new-window https://akomis.webo.family/index.php/apps/calendar/dayGridMonth/now https://www.youtube.com/feed/subscriptions https://www.reddit.com/&
+    firefox -P "main" --class="main" https://akomis.webo.family/index.php/apps/calendar/dayGridMonth/now https://www.youtube.com/feed/subscriptions https://www.reddit.com/&
 
     #  ws-3
     i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
     atom&
-    firefox -P "dev" --class="dev" --new-window https://github.com/akomis&
+    firefox -P "dev" --class="dev" https://github.com/akomis&
     alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
     #  ws-4
