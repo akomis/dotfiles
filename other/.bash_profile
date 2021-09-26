@@ -19,7 +19,6 @@ export LOCKSCREEN="$HOME/.lockscreen"
 
 # Shortcut variables
 export HDD="/mnt/hdd"
-export BRC="$HOME/.bashrc"
 export BACKUP="$HDD/backup"
 export CLOUD="$HOME/nextcloud"
 export DOCS="$HOME/documents"
@@ -28,7 +27,6 @@ export DW="$HOME/downloads"
 export M="$HOME/music"
 export P="$HOME/projects"
 export PICS="$HOME/pictures"
-export PROF="$HOME/.bash_profile"
 export SC="$HOME/projects/scripts"
 export SCR="$HOME/pictures/screenshots"
 export THC="$HOME/projects/thc"
@@ -36,6 +34,7 @@ export THCD="$HOME/projects/thc/dev"
 export THCDOCS="$HOME/projects/thc/docs"
 export THCPICS="$HOME/projects/thc/pics"
 export VIDS="$HOME/videos"
+export USB="/run/media/akomis"
 export THCSERVER="thehotcharcoalers.com"
 
 

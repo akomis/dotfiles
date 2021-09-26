@@ -17,7 +17,7 @@ loadLayout () {
 
     #  ws-3
     i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
-    atom&
+    vscodium&
     firefox -P "dev" --class="dev" https://github.com/akomis&
     alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
