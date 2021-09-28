@@ -2,7 +2,6 @@
 
 declare -a packages=(
 "alacritty"
-"atom"
 "dunst"
 "dmenu"
 "xorg-server"
@@ -27,8 +26,8 @@ declare -a packages=(
 "thunderbird"
 "ttf-liberation"
 "ttf-font-awesome"
-"udiskie"
 "udisks2"
+"udiskie"
 "vim"
 "vlc"
 "zathura"
@@ -58,6 +57,7 @@ declare -a aur_packages=(
 "ttf-weather-icons"
 "gotop"
 "cava"
+"vscodium"
 "protonvpn"
 )
 

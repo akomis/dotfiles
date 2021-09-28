@@ -19,7 +19,6 @@
     "type": "con"
 }
 {
-    // splitv split container with 2 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
@@ -62,7 +61,8 @@
             "percent": 0.38,
             "swallows": [
                {
-               "class": "^Alacritty$"
+               "class": "^Alacritty$",
+               "title": "w3t1"
                }
             ],
             "type": "con"
