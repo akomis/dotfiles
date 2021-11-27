@@ -45,7 +45,7 @@ udiskie&
 nextcloud --background&
 
 # Device configuration
-setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:alt_shift_toggle
+setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggle
 liquidctl set fan speed 20 30 30 30 40 40 50 70 60 90 70 100
 
 # Layout initialization
