@@ -7,11 +7,14 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts"
 
 # Default programs
 export BROWSER="firefox"
+export WEB=$BROWSER
 export WEBBROWSER=$BROWSER
-echo $WEBBROWSER > $HOME/test.out
 export EDITOR="vim"
 export PLAYER="vlc"
 export READER="zathura"
+export PDF=$READER
+export PDFREADER=$READER
+export PDFVIEWER=$READER
 export TERMINAL="alacritty"
 export TERMINFO="/usr/lib/terminfo"
 export VIEWER="feh"
