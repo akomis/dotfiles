@@ -7,6 +7,8 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts"
 
 # Default programs
 export BROWSER="firefox"
+export WEBBROWSER=$BROWSER
+echo $WEBBROWSER > $HOME/test.out
 export EDITOR="vim"
 export PLAYER="vlc"
 export READER="zathura"
