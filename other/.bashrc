@@ -5,7 +5,7 @@
 
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$THCD/front-page"
+export CWP="$THCD/backend"
 export RUN=""
 export SND=""
 
@@ -17,9 +17,9 @@ alias ls="ls --color=auto --group-directories-first"
 alias lsm="ls -alth"
 alias sizes="du -h --max-depth=1 | sort -hr"
 alias gotop="gotop -a -c solarized16-dark"
-alias pv="protonvpn-cli"
-alias pvc="protonvpn-cli c -f"
-alias pvd="protonvpn-cli d"
+alias pv="protonvpn"
+alias pvc="protonvpn c -f"
+alias pvd="protonvpn d"
 alias hdd="cd $HDD"
 alias brc="$EDITOR $BRC"
 alias bu="cd $BACKUP"
@@ -45,3 +45,4 @@ alias code="vscodium"
 alias c="git commit -m"
 alias gpus="git push"
 alias gpul="git pull"
+
