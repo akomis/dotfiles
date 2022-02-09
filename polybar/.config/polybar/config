@@ -76,10 +76,10 @@ module-margin = 2
 
 
 ; Fonts are defined using <font-name>;<vertical-offset>
-font-0 = "Noto Sans-Regular:size=10;1"
-font-1 = "Noto Sans-Regular:style=bold:size=10;2"
-font-2 = "Font Awesome 5 Brands:style=Solid:antialias=true:pixelsize=11;2"
-font-3 = "Font Awesome 5 Free:style=Solid:antialias=true:pixelsize=10;2"
+font-0 = "Noto Sans Regular:style=Regular:size=10;1"
+font-1 = "Noto Sans Regular:style=Bold:size=10;2"
+font-2 = "Font Awesome 6 Brands,Font Awesome 6 Brands Regular:style=Regular:antialias=true:pixelsize=11;2"
+font-3 = "Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:antialias=true:pixelsize=10;2"
 font-4 = "Weather Icons:style=bold:size=8;2"
 
 

@@ -45,4 +45,5 @@ alias code="vscodium"
 alias c="git commit -m"
 alias gpus="git push"
 alias gpul="git pull"
+alias playall="ls -v *.wav *.mp3 *.mp4 | xargs vlc"
 
