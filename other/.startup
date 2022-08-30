@@ -17,8 +17,8 @@ loadLayout () {
 
     #  ws-3
     i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
-    vscodium&
-    firefox -P "dev" --class="dev" https://github.com/akomis&
+    code --user-data-dir $CWW&
+    firefox -P "dev" --class="dev" https://github.com/akomis& http://localhost:3000
     alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
     #  ws-4
@@ -46,7 +46,7 @@ nextcloud --background&
 
 # Device configuration
 setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggle
-liquidctl set fan speed 20 30 30 30 40 40 50 70 60 90 70 100
+liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
 
 # Layout initialization
 loadLayout && i3-msg 'workspace 1'

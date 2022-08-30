@@ -12,8 +12,8 @@
     "percent": 0.62,
     "swallows": [
        {
-       "class": "^VSCodium$",
-       "instance": "^vscodium$"
+       "class": "^code-oss$",
+       "instance": "^code-oss$"
        }
     ],
     "type": "con"

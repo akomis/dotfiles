@@ -149,7 +149,7 @@ bindsym $mod+Right resize grow width 2 px or 2 ppt
 
 # Custom key bindings
 bindsym $mod+shift+x exec i3lock --ignore-empty-password -i $LOCKSCREEN -f
-bindsym $mod+shift+s exec flameshot gui -p $SCR
+bindsym $mod+shift+s exec flameshot gui
 bindsym $mod+shift+Escape exec shutdown -h now
 bindsym $mod+shift+F12 exec reboot
 bindsym $mod+d exec dmenu_run -i -fn "Noto Sans Mono:pixelsize=14" -nb "$bg" -nf "$fg" -sb "$pr" -sf "$fg"
@@ -168,7 +168,7 @@ bindsym ctrl+d exec "/bin/null"
 
 # Workspace assignments
 for_window [class="^main$"] move to workspace $ws2
-for_window [class="^Thunderbird$"] move to workspace $ws4
+for_window [class="^thunderbird$"] move to workspace $ws4
 for_window [class="^Signal$"] move to workspace $ws5
 for_window [class="^Joplin$"] move to workspace $ws6
 for_window [class="^Steam$"] move to workspace $ws7
