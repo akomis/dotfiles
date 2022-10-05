@@ -30,6 +30,9 @@ loadLayout () {
     # ws-6
     joplin-desktop&
 
+    # ws-7
+    clickup&
+
     #  ws-9
     alacritty -e cava&
 
