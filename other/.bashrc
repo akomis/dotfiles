@@ -5,7 +5,7 @@
 
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$P/theachristodoulidou"
+export CWP="$P"
 export CWW="$HOME/.config/vscode"
 
 # Aliases
@@ -46,6 +46,5 @@ alias gpus="git push"
 alias gpul="git pull"
 alias gpub="git rev-parse --abbrev-ref HEAD | xargs git push --set-upstream origin"
 alias playall="ls -v *.wav *.mp3 *.mp4 | xargs vlc"
-alias glog="git log --graph --full-history --all --color --pretty=format:\"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s\""s
-alias pgadmin="cd $HOME/docker/pgadmin4 && docker-compose up "
 alias twmin="yarn tailwindcss -o build.css --minify"
+alias sctl="systemctl"

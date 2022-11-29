@@ -217,9 +217,6 @@ colors:
     focused_match:
       foreground: '#ffffff'
       background: '#D5203E'
-    bar:
-      background: '#D5203E'
-      foreground: '#1d1f21'
 
   # Keyboard regex hints
   #hints:
