@@ -85,8 +85,7 @@ font-4 = "Weather Icons:style=bold:size=8;2"
 
 modules-left = i3 prev spotify next
 modules-center = weather date
-modules-right = wireless-network filesystem memory cpu temperature
-;wired-network
+modules-right = wired-network filesystem memory cpu temperature
 
 ;================================== MODULES ===================================
 
@@ -139,7 +138,7 @@ format-background = ${colors.background}
 [module/spotify]
 ;https://github.com/NicholasFeldman/dotfiles/blob/master/polybar/.config/polybar/spotify.sh
 type = custom/script
-exec = ~/.config/polybar/polybar-scripts/spotify.sh
+exec = ~/.config/polybar/scripts/spotify.sh
 interval = 1
 
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
@@ -156,7 +155,7 @@ format-padding = 2
 
 [module/prev]
 type = custom/script
-exec = echo ""
+exec = "echo "
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
 format-foreground = ${colors.foreground}
@@ -168,7 +167,7 @@ format-padding = 2
 
 [module/next]
 type = custom/script
-exec = echo ""
+exec =  echo ""
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
 format-foreground = ${colors.foreground}
@@ -183,7 +182,7 @@ format-padding = 2
 
 [module/weather]
 type = custom/script
-exec = ~/.config/polybar/polybar-scripts/weather-simple.sh
+exec = ~/.config/polybar/scripts/weather-simple.sh
 interval = 600
 
 label = %{T5}%output%
@@ -218,9 +217,9 @@ format-underline =
 [module/wired-network]
 type = internal/network
 interface = enp0s31f6
-interval = 1
+interval = 15
 
-label-connected = "%ifname%"
+label-connected = "Ethernet %netspeed%"
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.primary}
 format-connected = <label-connected>
@@ -229,8 +228,8 @@ format-connected-background = ${colors.background}
 format-connected-underline = ${colors.underline}
 format-connected-padding = 0
 
-label-disconnected = "%ifname% disconnected"
-format-disconnected-prefix = "  "
+label-disconnected = "Ethernet Disconnected"
+format-disconnected-prefix = "  "
 format-disconnected-prefix-foreground = ${colors.primary}
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = ${colors.inactive}
