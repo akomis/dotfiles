@@ -5,7 +5,7 @@
 
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$P"
+export CWP="$P/natureme"
 export CWW="$HOME/.config/vscode"
 
 # Aliases
@@ -21,7 +21,6 @@ alias pv="protonvpn-cli"
 alias pvc="protonvpn-cli c -f"
 alias pvd="protonvpn-cli d"
 alias hdd="cd $HDD"
-alias brc="$EDITOR $BRC"
 alias bu="cd $BACKUP"
 alias cloud="cd $CLOUD"
 alias docs="cd $DOCS"
@@ -48,3 +47,4 @@ alias gpub="git rev-parse --abbrev-ref HEAD | xargs git push --set-upstream orig
 alias playall="ls -v *.wav *.mp3 *.mp4 | xargs vlc"
 alias twmin="yarn tailwindcss -o build.css --minify"
 alias sctl="systemctl"
+alias bt="sudo systemctl start bluetooth"

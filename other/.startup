@@ -28,7 +28,6 @@ loadLayout () {
     signal-desktop&
 
     # ws-6
-    clickup&
 
     #  ws-9
     alacritty -e cava&
