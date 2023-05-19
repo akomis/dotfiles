@@ -28,6 +28,7 @@ loadLayout () {
     signal-desktop&
 
     # ws-6
+    notion-app&
 
     #  ws-9
     alacritty -e cava&
@@ -35,6 +36,8 @@ loadLayout () {
     #  ws-10
     spotify&
 }
+
+loadLayout
 
 # Startup programs
 protonmail-bridge --noninteractive&
@@ -48,4 +51,4 @@ setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggl
 liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
 
 # Layout initialization
-loadLayout && i3-msg 'workspace 1'
+i3-msg 'workspace 1'

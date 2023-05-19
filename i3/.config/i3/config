@@ -171,7 +171,7 @@ bindsym ctrl+d exec "/bin/null"
 for_window [class="^main$"] move to workspace $ws2
 for_window [class="^thunderbird$"] move to workspace $ws4
 for_window [class="^Signal$"] move to workspace $ws5
-for_window [class="^ClickUp$"] move to workspace $ws6
+for_window [class="^notion-app$"] move to workspace $ws6
 for_window [title="^cava$"] move to workspace $ws9
 for_window [class="^Spotify$"] move to workspace $ws10
 
