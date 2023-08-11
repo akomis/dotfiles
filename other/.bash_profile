@@ -5,6 +5,9 @@
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts"
 
+export DISPLAY_LEFT="HDMI-0"
+export DISPLAY_RIGHT="HDMI-1"
+
 # Default programs
 export BROWSER="firefox"
 export WEB=$BROWSER
