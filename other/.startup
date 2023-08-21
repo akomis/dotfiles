@@ -32,14 +32,6 @@ loadLayout () {
 
     #  ws-10
     spotify&
-
-    i3-msg "workspace 5, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 6, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 7, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 8, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 9, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 10, move workspace to output $DISPLAY_RIGHT"&
-    i3-msg "workspace 1"&
 }
 
 # Startup programs

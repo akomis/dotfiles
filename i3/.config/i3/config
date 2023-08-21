@@ -184,4 +184,10 @@ for_window [class="Gnome-calculator"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
 exec_always --no-startup-id $HOME/.startup 2> $HOME/.startup.log
-exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
+exec_always --no-startup-id i3-msg "workspace 5, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 6, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 7, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 8, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 9, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 10, move workspace to output $DISPLAY_RIGHT"
+exec_always --no-startup-id i3-msg "workspace 1"
