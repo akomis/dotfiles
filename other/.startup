@@ -16,16 +16,16 @@ loadLayout () {
     firefox -P "main" --class="main" https://www.notion.so/&
 
     #  ws-3
-    i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
     code --user-data-dir $CWW&
-    firefox -P "dev" --class="dev" https://github.com/akomis&
-    alacritty --title "w3t1" -e $SHELL -c 'cd $CWP; $SHELL -i'&
 
     #  ws-4
     thunderbird&
 
     #  ws-5
     signal-desktop&
+
+    # ws-6
+    firefox -P "dev" --class="dev" https://github.com/akomis &
 
     #  ws-9
     alacritty -e cava&
@@ -34,16 +34,16 @@ loadLayout () {
     spotify&
 }
 
+# Layout initialization
+loadLayout
+
+# Device configuration
+setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggle
+liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
+
 # Startup programs
 protonmail-bridge --noninteractive&
 picom&
 dunst -config ~/.config/dunst/dunstrc&
 udiskie&
 nextcloud --background&
-
-# Device configuration
-setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggle
-liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
-
-# Layout initialization
-loadLayout
