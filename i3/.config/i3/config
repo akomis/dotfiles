@@ -171,7 +171,7 @@ bindsym $mod+d exec dmenu_run -i -fn "Noto Sans Mono:pixelsize=14" -nb "$bg" -nf
 bindsym $mod+m exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+less exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-bindsym $mod+Shift+f exec $BROWSER -P "default" --class="firefox" --new-window
+bindsym $mod+Shift+f exec $BROWSER -P "main" --class="main" --new-window
 bindsym $mod+Shift+t exec $BROWSER https://translate.google.com/
 bindsym $mod+Shift+a exec arch-wiki-search
 bindsym $mod+Shift+b exec blueman-manager

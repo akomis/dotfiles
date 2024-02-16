@@ -13,7 +13,7 @@ loadLayout () {
     alacritty --title "w1t2" -e gotop -a -c solarized16-dark&
 
     #  ws-2
-    firefox -P "main" --class="main" https://www.notion.so/&
+    firefox -P "main" --class="main" https://www.notion.so/Personal-816510d6d42b488a9ef201036b4c0c57&
 
     #  ws-3
     code --user-data-dir $CWW&

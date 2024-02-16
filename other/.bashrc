@@ -5,7 +5,7 @@
 
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$P/appgpt/frontend"
+export CWP="$P/appgpt/appgpt-beta"
 export CWW="$HOME/.config/vscode"
 
 # Aliases
