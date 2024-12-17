@@ -3,7 +3,7 @@
 # Profile file. Runs on login.
 #
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts"
+export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.yarn/bin"
 
 export DISPLAY_LEFT="HDMI-0"
 export DISPLAY_RIGHT="HDMI-1"
@@ -14,15 +14,12 @@ export WEB=$BROWSER
 export WEBBROWSER=$BROWSER
 export EDITOR="vim"
 export PLAYER="vlc"
-export READER="zathura"
-export PDF=$READER
-export PDFREADER=$READER
-export PDFVIEWER=$READER
 export TERMINAL="alacritty"
 export TERMINFO="/usr/lib/terminfo"
 export VIEWER="feh"
 export WALLPAPER="$HOME/.wallpaper"
 export LOCKSCREEN="$HOME/.lockscreen"
+export CALCULATOR="gnome-calculator"
 
 
 # Shortcut variables
@@ -37,14 +34,8 @@ export P="$HOME/projects"
 export PICS="$HOME/pictures"
 export SC="$HOME/projects/scripts"
 export SCR="$HOME/pictures/screenshots"
-export THC="$HOME/projects/thc"
-export THCD="$HOME/projects/thc/dev"
-export THCDOCS="$HOME/projects/thc/docs"
-export THCPICS="$HOME/projects/thc/pics"
 export VIDS="$HOME/videos"
 export USB="/run/media/akomis"
-export THCSERVER="thehotcharcoalers.com"
-
 
 # Prompt Configuration
 export C0="$(tput setaf 0)"

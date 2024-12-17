@@ -3,14 +3,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+source /usr/share/nvm/init-nvm.sh
+
 export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
-export CWP="$P/appgpt/appgpt-beta"
-export CWW="$HOME/.config/vscode"
+export CWP="$P"
 
 # Aliases
 alias cwp="cd $CWP"
-alias code="code --user-data-dir $CWW"
 alias feh="feh -d"
 alias b="$BROWSER"
 alias ls="ls --color=auto --group-directories-first"
@@ -32,11 +32,6 @@ alias pics="cd $PICS"
 alias prof="$EDITOR $PROF"
 alias sc="cd $SC"
 alias scr="cd $SCR"
-alias sshthc="ssh root@$THCSERVER"
-alias thc="cd $THC"
-alias thcd="cd $THCD"
-alias thcdocs="cd $THCDOCS"
-alias thcpics="cd $THCPICS"
 alias usys="yes | yay"
 alias vids="cd $VIDS"
 alias usb="cd $USB"
@@ -45,9 +40,7 @@ alias gpus="git push"
 alias gpul="git pull"
 alias gpub="git rev-parse --abbrev-ref HEAD | xargs git push --set-upstream origin"
 alias playall="ls -v *.wav *.mp3 *.mp4 | xargs vlc"
-alias twmin="yarn tailwindcss -o build.css --minify"
 alias sctl="systemctl"
-alias bt="sudo systemctl start bluetooth"
 alias portrait="xrandr --output DVI-D-0 --off --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output HDMI-1 --mode 2560x1440 --pos 2560x0 --rate 144 --rotate right --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off && feh --bg-scale $WALLPAPER"
 alias landscape="xrandr --output DVI-D-0 --off --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output HDMI-1 --mode 2560x1440 --pos 2560x0 --rate 144 --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off && feh --bg-scale $WALLPAPER"
-alias lol="leagueoflegends kill; leagueoflegends start"
+alias rw="railway"

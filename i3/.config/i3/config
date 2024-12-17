@@ -171,30 +171,28 @@ bindsym $mod+d exec dmenu_run -i -fn "Noto Sans Mono:pixelsize=14" -nb "$bg" -nf
 bindsym $mod+m exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+less exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-bindsym $mod+Shift+f exec $BROWSER -P "main" --class="main" --new-window
+bindsym $mod+Shift+f exec $BROWSER 
 bindsym $mod+Shift+t exec $BROWSER https://translate.google.com/
 bindsym $mod+Shift+a exec arch-wiki-search
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+Shift+o exec libreoffice
 bindsym $mod+Shift+p exec pavucontrol
-bindsym $mod+Shift+c exec gnome-calculator
+bindsym $mod+Shift+c exec $CALCULATOR
 
 # Disabled key bindings
 bindsym ctrl+d exec "/bin/null"
 
 # Workspace assignments
-for_window [class="^main$"] move to workspace $ws2
 for_window [class="^code-oss$"] move to workspace $ws3
 for_window [class="^thunderbird$"] move to workspace $ws4
 for_window [class="^Signal$"] move to workspace $ws5
-for_window [class="^dev$"] move to workspace $ws6
 for_window [title="^cava$"] move to workspace $ws9
 for_window [class="^Spotify$"] move to workspace $ws10
 
 # Floating windows
-for_window [class="Gnome-calculator"] floating enable
+for_window [class="$CALCULATOR"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
 exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
-exec_always --no-startup-id $HOME/.startup 2> $HOME/.startup.log
+exec_always $HOME/.startup 2> $HOME/.startup.log
 exec_always --no-startup-id i3-msg "workspace 1"
