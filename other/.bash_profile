@@ -5,6 +5,11 @@
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.yarn/bin"
 
+# Set LAPTOP env variable which determines startup and config
+if [ "$(cat /sys/class/dmi/id/chassis_type)" = "8" ] || [ "$(cat /sys/class/dmi/id/chassis_type)" = "9" ] || [ "$(cat /sys/class/dmi/id/chassis_type)" = "10" ]; then
+   export LAPTOP=true
+fi
+
 export DISPLAY_LEFT="HDMI-0"
 export DISPLAY_RIGHT="HDMI-1"
 
@@ -18,14 +23,11 @@ export TERMINAL="alacritty"
 export TERMINFO="/usr/lib/terminfo"
 export VIEWER="feh"
 export WALLPAPER="$HOME/.wallpaper"
-export LOCKSCREEN="$HOME/.lockscreen"
 export CALCULATOR="gnome-calculator"
-
 
 # Shortcut variables
 export HDD="/mnt/hdd"
 export BACKUP="$HDD/backup"
-export CLOUD="$HOME/nextcloud"
 export DOCS="$HOME/documents"
 export DOTS="$HOME/dotfiles"
 export DW="$HOME/downloads"

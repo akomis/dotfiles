@@ -163,7 +163,7 @@ bindsym $mod+Up resize shrink height 2 px or 2 ppt
 bindsym $mod+Right resize grow width 2 px or 2 ppt
 
 # Custom key bindings
-bindsym $mod+ctrl+q exec i3lock --ignore-empty-password --show-failed-attempts --image $LOCKSCREEN --tiling
+bindsym $mod+ctrl+q exec i3lock --ignore-empty-password --show-failed-attempts --color "$bg" --tiling
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+Shift+Escape exec shutdown -h now
 bindsym $mod+Shift+F12 exec reboot
@@ -173,9 +173,7 @@ bindsym $mod+less exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spo
 bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym $mod+Shift+f exec $BROWSER 
 bindsym $mod+Shift+t exec $BROWSER https://translate.google.com/
-bindsym $mod+Shift+a exec arch-wiki-search
 bindsym $mod+Shift+b exec blueman-manager
-bindsym $mod+Shift+o exec libreoffice
 bindsym $mod+Shift+p exec pavucontrol
 bindsym $mod+Shift+c exec $CALCULATOR
 
@@ -190,9 +188,9 @@ for_window [title="^cava$"] move to workspace $ws9
 for_window [class="^Spotify$"] move to workspace $ws10
 
 # Floating windows
-for_window [class="$CALCULATOR"] floating enable
+for_window [title="$CALCULATOR"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
-exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
-exec_always $HOME/.startup 2> $HOME/.startup.log
-exec_always --no-startup-id i3-msg "workspace 1"
+# exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
+# exec_always $HOME/.startup 2> $HOME/.startup.log
+# exec_always --no-startup-id i3-msg "workspace 1"

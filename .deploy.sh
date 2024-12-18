@@ -4,21 +4,17 @@ declare -a packages=(
 "alacritty"
 "dunst"
 "dmenu"
-"xorg-server"
-"xorg-xinit"
-"pulseaudio"
 "pavucontrol"
 "neofetch"
 "feh"
 "firefox"
 "flameshot"
-"gcolor2"
+"gcolor3"
 "gnome-calculator"
 "gnome-keyring"
 "i3-gaps"
 "i3lock"
-"lxappearance"
-"nextcloud-client"
+"nwg-look"
 "noto-fonts"
 "noto-fonts-emoji"
 "picom"
@@ -30,8 +26,6 @@ declare -a packages=(
 "udiskie"
 "vim"
 "vlc"
-"zathura"
-"zathura-pdf-poppler"
 "jq"
 "tldr"
 "git"
@@ -41,24 +35,26 @@ declare -a packages=(
 "dhcpcd"
 "reflector"
 "pacman-contrib"
-"liquidctl"
 "libreoffice"
-"nvidia"
+"code"
+"bluez"
+"bluez-utils"
+"blueman"
+)
+
+declare -a laptop_packages=(
+"tlp"
+"acpi"
 )
 
 declare -a aur_packages=(
-"joplin-desktop"
 "polybar"
-"flat-remix"
-"flat-remix-gtk"
 "protonmail-bridge"
 "spotify"
-"ffmpeg-compat-57"
 "ttf-weather-icons"
 "gotop"
 "cava"
-"vscodium"
-"protonvpn"
+"nvm"
 )
 
 # Update system and repos
@@ -66,6 +62,10 @@ sudo pacman -Syu --noconfirm
 
 # Install packages from official repos
 sudo pacman -S ${packages[@]} --noconfirm
+
+if [[ $LAPTOP == true ]]; then
+    sudo pacman -S ${laptop_packages[@]} --noconfirm
+fi
 
 # Install AUR helper (yay)
 cd /opt &&\
