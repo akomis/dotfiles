@@ -2,7 +2,7 @@
 
 loadLayout () {
     # Set wallpaper
-    feh --bg-scale $WALLPAPER&
+    feh --bg-center $WALLPAPER&
 
     # Start polybar
     . $HOME/.config/polybar/launch.sh&
