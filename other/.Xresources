@@ -1,30 +1,23 @@
-*.foreground:   #EEFFFF
-*.background:   #0D0D0D
+*.foreground:   #f3ebfc
+*.background:   #11151a
 *.cursor:       #FFB3BF
 
-! Colors 0-15
-! Normal
+! Regular Set
+*.color0:  #0c0e11
+*.color1:  #f3ebfc
+*.color2:  #b70bda
+*.color3:  #ce7cd5
+*.color4:  #944aeb
+*.color5:  #7031ae
+*.color6:  #d34e2d
+*.color7:  #d1a62e
 
-!Background
-*.color0:  #0D0D0D
-!Foreground
-*.color1:  #EEFFFF
-*.color2:  #FF5370
-*.color3:  #FFCCD4
-*.color4:  #D5334E
-!Secondary
-*.color5:  #D45748
-!Primary
-*.color6:  #D5203E
-!Gray
-*.color7:  #333333
-
-! Bold
-*.color8:  #0D0D0D
-*.color9:  #EEFFFF
-*.color10: #FF5370
-*.color11: #FFCCD4
-*.color12: #D5334E
-*.color13: #D45748
-*.color14: #D5203E
-*.color15: #333333
+! Bold Set
+*.color8:  #0c0e11
+*.color9:  #f3ebfc
+*.color10: #b70bda
+*.color11: #ce7cd5
+*.color12: #944aeb
+*.color13: #7031ae
+*.color14: #d34e2d
+*.color15: #d1a62e

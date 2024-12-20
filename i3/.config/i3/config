@@ -16,7 +16,7 @@ set $mod Mod4
 # font pango:monospace 10
 
 # i3-gaps settings
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 smart_gaps on
 hide_edge_borders smart
 gaps inner 15
@@ -24,14 +24,14 @@ gaps outer 5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 10, FontAwesome 10
+font pango:DejaVu Sans Mono 12
 
 # NOTE: The '#XXXXXX' in the lines below is the fallback color
-set_from_resource $bg i3wm.color0 #121722
-set_from_resource $fg i3wm.color1 #E0E0E0
-set_from_resource $pr i3wm.color6 #C0025B
-set_from_resource $se i3wm.color5 #12355b
-set_from_resource $gr i3wm.color7 #3D3D3D
+set_from_resource $bg i3wm.color0
+set_from_resource $fg i3wm.color1
+set_from_resource $pr i3wm.color5
+set_from_resource $se i3wm.color6
+set_from_resource $gr i3wm.color0
 
 
 # class                 border  backgr. text indicator child_border
@@ -195,4 +195,3 @@ for_window [title="Color Picker"] floating enable
 
 exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
 exec_always $HOME/.startup 2> $HOME/.startup.log
-exec_always --no-startup-id i3-msg "workspace 1"
