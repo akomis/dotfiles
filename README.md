@@ -9,7 +9,6 @@ Various configuration files for Linux software such as
 - dunst
 - picom
 - polybar
-- neofetch
 - alacritty  
   and others
 

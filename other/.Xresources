@@ -3,7 +3,7 @@
 *.cursor:       #FFB3BF
 
 ! Regular Set
-*.color0:  #0c0e11
+*.color0:  #020619
 *.color1:  #f3ebfc
 *.color2:  #b70bda
 *.color3:  #ce7cd5
@@ -13,7 +13,7 @@
 *.color7:  #d1a62e
 
 ! Bold Set
-*.color8:  #0c0e11
+*.color8:  #020619
 *.color9:  #f3ebfc
 *.color10: #b70bda
 *.color11: #ce7cd5

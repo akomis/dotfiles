@@ -175,7 +175,7 @@ bindsym $mod+Shift+f exec $BROWSER
 bindsym $mod+Shift+t exec $BROWSER https://translate.google.com/
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+Shift+p exec pavucontrol
-bindsym $mod+Shift+c exec gnome-calculator
+bindsym $mod+Shift+c exec qalculate-gtk
 bindsym $mod+Shift+d exec thunar
 
 # Disabled key bindings
@@ -189,7 +189,7 @@ for_window [title="^cava$"] move to workspace $ws9
 for_window [class="^Spotify$"] move to workspace $ws10
 
 # Floating windows
-for_window [title="Calculator"] floating enable
+for_window [title="Qalculate!"] floating enable
 for_window [title="Volume Control"] floating enable
 for_window [title="Color Picker"] floating enable
 
