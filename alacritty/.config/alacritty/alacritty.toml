@@ -3,11 +3,11 @@ cursor = "#f3ebfc"
 text = "CellBackground"
 
 [colors.primary]
-background = "#0c0e11"
+background = "#020619"
 foreground = "#f3ebfc"
 
 [colors.search.focused_match]
-background = "#0c0e11"
+background = "#020619"
 foreground = "#ffffff"
 
 [colors.search.matches]
@@ -15,7 +15,7 @@ background = "#000000"
 foreground = "#ffffff"
 
 [colors.normal]
-black = "#0c0e11"
+black = "#020619"
 white = "#f3ebfc"
 red = "#b70bda"
 blue = "#ce7cd5"
