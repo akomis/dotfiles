@@ -5,11 +5,6 @@
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.yarn/bin"
 
-# Set LAPTOP env variable which determines startup and config
-if [ "$(cat /sys/class/dmi/id/chassis_type)" = "8" ] || [ "$(cat /sys/class/dmi/id/chassis_type)" = "9" ] || [ "$(cat /sys/class/dmi/id/chassis_type)" = "10" ]; then
-   export LAPTOP=true
-fi
-
 export DISPLAY_LEFT="HDMI-0"
 export DISPLAY_RIGHT="HDMI-1"
 

@@ -5,7 +5,7 @@
 
 source /usr/share/nvm/init-nvm.sh
 
-export PS1="\[${BOLD}${C6}\]> \[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
+export PS1="\[${RESET}${C5}\]\w \[${BOLD}${C3}\]\$ \[${RESET}\]"
 
 export CWP="$P"
 

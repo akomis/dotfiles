@@ -27,7 +27,7 @@ gaps outer 5
 font pango:DejaVu Sans Mono 10, FontAwesome 10
 
 # NOTE: The '#XXXXXX' in the lines below is the fallback color
-set_from_resource $bg i3wm.color0 #131313
+set_from_resource $bg i3wm.color0 #121722
 set_from_resource $fg i3wm.color1 #E0E0E0
 set_from_resource $pr i3wm.color6 #C0025B
 set_from_resource $se i3wm.color5 #12355b
@@ -176,6 +176,7 @@ bindsym $mod+Shift+t exec $BROWSER https://translate.google.com/
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+Shift+p exec pavucontrol
 bindsym $mod+Shift+c exec gnome-calculator
+bindsym $mod+Shift+d exec thunar
 
 # Disabled key bindings
 bindsym ctrl+d exec "/bin/null"

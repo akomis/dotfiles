@@ -40,6 +40,11 @@ declare -a packages=(
 "bluez"
 "bluez-utils"
 "blueman"
+"thunar"
+"thunar-media-tags-plugin"
+"thunar-volman"
+"tumbler"
+"ffmpegthumbnailer"
 )
 
 declare -a laptop_packages=(

@@ -8,10 +8,10 @@ loadLayout () {
     . $HOME/.config/polybar/launch.sh&
 
     # ws-1
-    i3-msg "workspace 1; exec alacritty -e gotop -a -c solarized16-dark" &
+    i3-msg "workspace 1; exec alacritty -e gotop -a -c solarized16-dark"&
 
     # ws-2
-    i3-msg "workspace 2; exec $BROWSER https://www.notion.so/Personal-816510d6d42b488a9ef201036b4c0c57"  &
+    i3-msg "workspace 2; exec $BROWSER https://www.notion.so/Personal-816510d6d42b488a9ef201036b4c0c57"&
 
     # ws-3
     code --user-data-dir $CWW&
@@ -23,7 +23,7 @@ loadLayout () {
     signal-desktop&
 
     # ws-6
-    i3-msg "workspace 6; exec teams"  &
+    i3-msg "workspace 6; exec teams"&
 
     # ws-9
     alacritty -e cava&
@@ -40,7 +40,4 @@ picom&
 dunst -config ~/.config/dunst/dunstrc&
 udiskie&
 
-# Machine type specific startup
-if [[ $LAPTOP == false ]]; then
-    liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
-fi
+liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100
