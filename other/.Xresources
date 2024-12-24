@@ -5,19 +5,19 @@
 ! Regular Set
 *.color0:  #020619
 *.color1:  #f3ebfc
-*.color2:  #b70bda
-*.color3:  #ce7cd5
-*.color4:  #944aeb
-*.color5:  #7031ae
-*.color6:  #d34e2d
-*.color7:  #d1a62e
+*.color2:  #bd0cd7
+*.color3:  #8080ff
+*.color4:  #dd3c56
+*.color5:  #ea9fab
+*.color6:  #9c1f33
+*.color7:  #d34e2d
 
 ! Bold Set
 *.color8:  #020619
 *.color9:  #f3ebfc
-*.color10: #b70bda
-*.color11: #ce7cd5
-*.color12: #944aeb
-*.color13: #7031ae
-*.color14: #d34e2d
-*.color15: #d1a62e
+*.color10: #bd0cd7
+*.color11: #8080ff
+*.color12: #dd3c56
+*.color13: #ce698e
+*.color14: #9c1f33
+*.color15: #d34e2d

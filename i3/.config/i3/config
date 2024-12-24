@@ -29,7 +29,7 @@ font pango:DejaVu Sans Mono 12
 # NOTE: The '#XXXXXX' in the lines below is the fallback color
 set_from_resource $bg i3wm.color0
 set_from_resource $fg i3wm.color1
-set_from_resource $pr i3wm.color5
+set_from_resource $pr i3wm.color4
 set_from_resource $se i3wm.color6
 set_from_resource $gr i3wm.color0
 

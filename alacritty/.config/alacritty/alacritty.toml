@@ -17,12 +17,12 @@ foreground = "#ffffff"
 [colors.normal]
 black = "#020619"
 white = "#f3ebfc"
-red = "#b70bda"
-blue = "#ce7cd5"
-magenta = "#944aeb"
-cyan = "#7031ae"
-green = "#d1a62e"
-yellow = "#be3f17"
+red = "#bd0cd7"
+blue = "#8080ff"
+cyan = "#dd3c56"
+magenta = "#ea9fab"
+green = "#9c1f33"
+yellow = "#d34e2d"
 
 
 [env]
