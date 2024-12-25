@@ -14,6 +14,9 @@ Various configuration files for Linux software such as
 
 This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
 
+![image](https://github.com/user-attachments/assets/5313103b-8e13-4c41-8955-2b4ece369c17)
+
+
 ## Config Replication
 
 If you wish to replicate this setup on your machine follow these procedures
