@@ -14,10 +14,6 @@ Various configuration files for Linux software such as
 
 This dotfiles repository is structured specifically to be managed by [GNU Stow](https://www.gnu.org/software/stow/)
 
-<div align="center">
-    <img src="./.screenshot">
-</div>
-
 ## Config Replication
 
 If you wish to replicate this setup on your machine follow these procedures

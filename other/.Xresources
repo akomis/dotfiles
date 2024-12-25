@@ -9,7 +9,7 @@
 *.color3:  #8080ff
 *.color4:  #dd3c56
 *.color5:  #ea9fab
-*.color6:  #9c1f33
+*.color6:  #d67661
 *.color7:  #d34e2d
 
 ! Bold Set
@@ -19,5 +19,5 @@
 *.color11: #8080ff
 *.color12: #dd3c56
 *.color13: #ce698e
-*.color14: #9c1f33
+*.color14: #d67661
 *.color15: #d34e2d
