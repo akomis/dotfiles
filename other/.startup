@@ -17,7 +17,7 @@ loadLayout () {
     code --user-data-dir $CWW&
 
     # ws-4
-    thunderbird&
+    protonmail-bridge --noninteractive && thunderbird&
 
     # ws-5
     signal-desktop&
@@ -33,10 +33,8 @@ loadLayout () {
 }
 
 setxkbmap -model pc104 -layout us,gr -variant qwerty -option grp:win_space_toggle&
-protonmail-bridge --noninteractive&
-picom&
 dunst -config ~/.config/dunst/dunstrc&
 udiskie&
 liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100&
 
-loadLayout && i3-msg "workspace 1"
+picom; loadLayout && i3-msg "workspace 1"
