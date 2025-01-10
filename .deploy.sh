@@ -45,6 +45,7 @@ declare -a packages=(
 "thunar-volman"
 "tumbler"
 "ffmpegthumbnailer"
+"qalculate-gtk"
 )
 
 declare -a laptop_packages=(
