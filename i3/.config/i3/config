@@ -192,6 +192,7 @@ for_window [class="^Spotify$"] move to workspace $ws10
 for_window [title="Qalculate!"] floating enable
 for_window [title="Volume Control"] floating enable
 for_window [title="Color Picker"] floating enable
+for_window [title="Bluetooth Devices"] floating enable
 
 exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
 exec_always $HOME/.startup 2> $HOME/.startup.log
