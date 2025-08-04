@@ -193,6 +193,7 @@ for_window [title="Qalculate!"] floating enable
 for_window [title="Volume Control"] floating enable
 for_window [title="Color Picker"] floating enable
 for_window [title="Bluetooth Devices"] floating enable
+for_window [title="kooha"] floating enable
 
-exec_always --no-startup-id xrandr --output $DISPLAY_LEFT --primary --mode 2560x1440 --pos 0x0 --rate 144 --rotate normal --output $DISPLAY_RIGHT --mode 2560x1440 --pos 2560x0 --rate 144
+exec_always --no-startup-id xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
 exec_always $HOME/.startup 2> $HOME/.startup.log

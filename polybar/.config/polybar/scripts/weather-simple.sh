@@ -25,7 +25,7 @@ get_icon() {
 }
 
 KEY="314d689b7d915fda64ebd2279116e9c5"
-CITY="Nicosia,CY"
+CITY="Nicosia"
 UNITS="metric"
 SYMBOL="°"
 

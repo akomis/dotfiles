@@ -11,7 +11,7 @@ loadLayout () {
     i3-msg "workspace 1; exec alacritty -e gotop -a -c solarized16-dark"&
 
     # ws-2
-    i3-msg "workspace 2; exec $BROWSER https://www.notion.so/Personal-816510d6d42b488a9ef201036b4c0c57"&
+    i3-msg "workspace 2; exec $BROWSER https://teams.microsoft.com/ https://www.notion.so https://outlook.office365.com/mail/" &
 
     # ws-3
     code --user-data-dir $CWW&
@@ -21,9 +21,6 @@ loadLayout () {
 
     # ws-5
     signal-desktop&
-
-    # ws-6
-    i3-msg "workspace 6; exec teams"&
 
     # ws-9
     alacritty -e cava&

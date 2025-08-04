@@ -5,8 +5,8 @@
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.yarn/bin"
 
-export DISPLAY_LEFT="HDMI-0"
-export DISPLAY_RIGHT="HDMI-1"
+export DISPLAY_LEFT="HDMI-1"
+export DISPLAY_RIGHT="eDP-1"
 
 # Default programs
 export BROWSER="firefox"
