@@ -1,31 +1,22 @@
 #!/bin/bash
 
 loadLayout () {
-    # Set wallpaper
     feh --bg-center $WALLPAPER&
 
-    # Start polybar
     . $HOME/.config/polybar/launch.sh&
 
-    # ws-1
     i3-msg "workspace 1; exec alacritty -e gotop -a -c solarized16-dark"&
-
-    # ws-2
+ 
     i3-msg "workspace 2; exec $BROWSER https://teams.microsoft.com/ https://www.notion.so https://outlook.office365.com/mail/" &
 
-    # ws-3
     code --user-data-dir $CWW&
 
-    # ws-4
     thunderbird&
 
-    # ws-5
     signal-desktop&
 
-    # ws-9
     alacritty -e cava&
 
-    # ws-10
     spotify&
 }
 
@@ -35,5 +26,6 @@ dunst -config ~/.config/dunst/dunstrc&
 udiskie&
 picom&
 liquidctl -m "Corsair" set fan speed 20 40 30 40 40 50 50 70 60 90 70 100&
+xinput disable "VEN_27C6:00 27C6:0D43 Touchpad"&
 
 loadLayout && i3-msg "workspace 1"
