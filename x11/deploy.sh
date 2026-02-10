@@ -2,26 +2,18 @@
 
 declare -a packages=(
 "alacritty"
-"dunst"
-"dmenu"
 "pavucontrol"
 "neofetch"
-"feh"
 "firefox"
-"flameshot"
 "gcolor3"
-"gnome-calculator"
 "gnome-keyring"
-"i3-gaps"
-"i3lock"
 "nwg-look"
 "noto-fonts"
 "noto-fonts-emoji"
-"picom"
 "signal-desktop"
 "thunderbird"
 "ttf-liberation"
-"ttf-font-awesome"
+"woff2-font-awesome"
 "udisks2"
 "udiskie"
 "vim"
@@ -46,6 +38,13 @@ declare -a packages=(
 "tumbler"
 "ffmpegthumbnailer"
 "qalculate-gtk"
+"i3-gaps"
+"i3lock"
+"picom"
+"dmenu"
+"feh"
+"flameshot"
+"dunst"
 )
 
 declare -a laptop_packages=(
@@ -54,19 +53,17 @@ declare -a laptop_packages=(
 )
 
 declare -a aur_packages=(
-"polybar"
 "protonmail-bridge"
 "spotify"
-"ttf-weather-icons"
 "gotop"
 "cava"
-"nvm"
+"polybar"
 )
 
 # Update system and repos
 sudo pacman -Syu --noconfirm
 
-# Install packages from official repos
+# Install packages
 sudo pacman -S ${packages[@]} --noconfirm
 
 if [[ $LAPTOP == true ]]; then
@@ -84,13 +81,11 @@ makepkg -si
 yay -S ${aur_packages[@]}
 
 # Setup configuration files
-rm ~/.bashrc ~/.bash_profile
+rm -f ~/.bashrc ~/.bash_profile
 cd && git clone https://github.com/akomis/dotfiles.git
-cd ~/dotfiles &&\
-for dir in *
-do
-    if [ -d "$dir" ]
-    then
-        stow -v $dir
-    fi
+cd ~/dotfiles
+
+for dir in x11/*/; do
+    pkg=$(basename "$dir")
+    stow -v -d x11 -t "$HOME" "$pkg"
 done

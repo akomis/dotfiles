@@ -1,0 +1,46 @@
+window {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: "Noto Sans Mono";
+    font-size: 12px;
+    border: 1px solid #666666;
+    border-radius: 12px;
+}
+
+#input {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    border: none;
+    border-bottom: 1px solid #666666;
+    padding: 8px;
+    margin: 0;
+}
+
+#inner-box {
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    margin: 0;
+}
+
+#outer-box {
+    padding: 0;
+    margin: 0;
+}
+
+#entry {
+    padding: 8px;
+    margin: 0;
+}
+
+#entry:selected {
+    background-color: #ffffff;
+    color: #0a0a0a;
+}
+
+#text {
+    color: #e0e0e0;
+}
+
+#entry:selected #text {
+    color: #0a0a0a;
+}

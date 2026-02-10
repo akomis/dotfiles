@@ -1,0 +1,6 @@
+# Color definitions (greyscale)
+set $bg       #0a0a0a
+set $fg       #e0e0e0
+set $accent   #ffffff
+set $dim      #666666
+set $urgent   #999999

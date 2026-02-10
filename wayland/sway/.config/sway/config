@@ -1,0 +1,195 @@
+set $mod Mod4
+
+# Load color definitions
+include ~/.config/sway/colors
+
+# Font
+font pango:DejaVu Sans Mono 12
+
+# Gaps and borders
+default_border pixel 1
+smart_gaps off
+hide_edge_borders smart
+gaps inner 5
+gaps outer 5
+
+# SwayFX
+corner_radius 10
+shadows enable
+shadow_blur_radius 20
+shadow_color #00000080
+layer_effects "waybar" shadows enable; corner_radius 10
+
+# Window colors
+#                       border  bg      text  indicator child_border
+client.focused          $bg     $bg     $fg   $accent   $accent
+client.focused_inactive $bg     $bg     $fg   $dim      $dim
+client.unfocused        $bg     $bg     $dim  $bg       $bg
+client.urgent           $bg     $bg     $fg   $urgent   $urgent
+client.background       $bg
+
+# Output configuration
+output HDMI-A-2 resolution 2560x1440 position 0 0
+output HDMI-A-1 resolution 2560x1440 position 2560 0
+output * bg ~/.wallpaper center $bg
+
+# Input configuration
+input type:keyboard {
+    xkb_layout "us,gr"
+    xkb_options "grp:win_space_toggle"
+}
+
+input type:touchpad {
+    events disabled
+}
+
+# Floating modifier
+floating_modifier $mod
+
+# Terminal
+bindsym $mod+Return splith, exec $TERMINAL
+bindsym $mod+slash splitv, exec $TERMINAL
+
+# Kill focused window
+bindsym $mod+q kill
+
+# Application launcher
+bindsym $mod+d exec wofi --show drun
+
+# Navigation (hjkl)
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Cycle workspaces
+bindsym $mod+Tab workspace back_and_forth
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# Layout
+bindsym $mod+s layout toggle stacking splith
+bindsym $mod+t layout toggle tabbed splith
+
+# Floating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+# Parent container
+bindsym $mod+a focus parent
+
+# Workspaces
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Assign workspaces to outputs (1-5 left, 6-10 right)
+workspace $ws1 output HDMI-A-2
+workspace $ws2 output HDMI-A-2
+workspace $ws3 output HDMI-A-2
+workspace $ws4 output HDMI-A-2
+workspace $ws5 output HDMI-A-2
+workspace $ws6 output HDMI-A-1
+workspace $ws7 output HDMI-A-1
+workspace $ws8 output HDMI-A-1
+workspace $ws9 output HDMI-A-1
+workspace $ws10 output HDMI-A-1
+
+# Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# Move container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# Move workspace to output
+bindsym $mod+ctrl+h move workspace to output left
+bindsym $mod+ctrl+l move workspace to output right
+
+# Reload / exit
+bindsym $mod+Shift+i reload
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
+
+# Resize
+bindsym $mod+Left resize shrink width 2 px
+bindsym $mod+Down resize grow height 2 px
+bindsym $mod+Up resize shrink height 2 px
+bindsym $mod+Right resize grow width 2 px
+
+# Custom keybindings
+bindsym $mod+ctrl+q exec swaylock
+bindsym $mod+Shift+s exec grimshot copy area
+bindsym $mod+Shift+Escape exec shutdown -h now
+bindsym $mod+Shift+F12 exec reboot
+
+# Spotify controls
+bindsym $mod+m exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym $mod+less exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+# App launchers
+bindsym $mod+Shift+f exec $BROWSER
+bindsym $mod+Shift+b exec blueman-manager
+bindsym $mod+Shift+p exec pavucontrol
+bindsym $mod+Shift+c exec qalculate-gtk
+bindsym $mod+Shift+d exec thunar
+
+# Disable ctrl+d
+bindsym ctrl+d exec /bin/true
+
+# Window assignments
+for_window [app_id="signal"] move to workspace $ws5
+for_window [app_id="spotify"] move to workspace $ws10
+
+# Floating windows
+for_window [app_id="qalculate-gtk"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [title="Color Picker"] floating enable
+for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+
+# Bar
+bar {
+    swaybar_command waybar
+}
+
+# Autostart
+exec mako
+exec udiskie
+
+# App launches
+exec swaymsg "workspace $ws2; exec firefox"
+exec swaymsg "workspace $ws3; exec code"
+exec spotify
+exec signal-desktop

@@ -1,0 +1,106 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "modules-left": ["clock", "custom/prev", "custom/spotify", "custom/next", "pulseaudio/slider"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["network", "disk", "memory", "cpu", "temperature", "battery"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "\uf120",
+            "2": "\uf0ac",
+            "3": "\uf121",
+            "4": "\uf0e0",
+            "5": "\uf075",
+            "6": "\uf07b",
+            "7": "\uf07b",
+            "8": "\uf07b",
+            "9": "\uf001",
+            "10": "\uf001",
+            "default": "\uf111"
+        }
+    },
+
+    "custom/prev": {
+        "format": "\uf048",
+        "on-click": "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous",
+        "tooltip": false
+    },
+
+    "custom/spotify": {
+        "exec": "~/.config/waybar/scripts/spotify.sh",
+        "interval": 1,
+        "format": "{}",
+        "max-length": 40,
+        "on-click": "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause",
+        "tooltip": false
+    },
+
+    "custom/next": {
+        "format": "\uf051",
+        "on-click": "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%a %d %H:%M}",
+        "format-alt": "{:%A %d/%m/%y %H:%M:%S}",
+        "interval": 1,
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "network": {
+        "format-ethernet": "\uf0e8 {ifname}",
+        "format-wifi": "\uf1eb  {essid} ({signalStrength}%)",
+        "format-disconnected": "\uf127 Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}\n\uf063 {bandwidthDownBits}  \uf062 {bandwidthUpBits}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "disk": {
+        "path": "/",
+        "format": "\uf0a0 {free}",
+        "interval": 15
+    },
+
+    "memory": {
+        "format": "\uf538 {percentage:02}%",
+        "interval": 3
+    },
+
+    "cpu": {
+        "format": "\uf2db {usage}%",
+        "interval": 3
+    },
+
+    "temperature": {
+        "critical-threshold": 70,
+        "format": "{icon} {temperatureC}\u00b0C",
+        "format-critical": "{icon} {temperatureC}\u00b0C",
+        "format-icons": ["\uf2cb", "\uf2ca", "\uf2c9", "\uf2c8", "\uf2c7"],
+        "interval": 3
+    },
+
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+
+    "battery": {
+        "states": {
+            "full": 99,
+            "good": 80,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "\uf0e7 {capacity}%",
+        "format-full": "\uf240",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    }
+}

@@ -24,7 +24,7 @@ get_icon() {
     echo $icon
 }
 
-KEY="314d689b7d915fda64ebd2279116e9c5"
+KEY=""
 CITY="Nicosia"
 UNITS="metric"
 SYMBOL="°"
