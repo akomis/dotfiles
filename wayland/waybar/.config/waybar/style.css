@@ -10,8 +10,8 @@
 }
 
 window#waybar {
-    background-color: transparent;
-    color: #e0e0e0;
+    background-color: #070707;
+    color: white;
 }
 
 .modules-left,

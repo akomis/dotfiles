@@ -1,11 +1,11 @@
 #!/bin/bash
 
 declare -a packages=(
-"alacritty"
+"kitty"
 "pavucontrol"
 "neofetch"
 "firefox"
-"gcolor3"
+"wl-color-picker"
 "gnome-keyring"
 "nwg-look"
 "noto-fonts"
@@ -16,7 +16,7 @@ declare -a packages=(
 "woff2-font-awesome"
 "udisks2"
 "udiskie"
-"vim"
+"neovim"
 "zsh"
 "vlc"
 "jq"
@@ -53,6 +53,7 @@ declare -a packages=(
 "wl-clipboard"
 "swaybg"
 "wlr-randr"
+"fastfetch"
 )
 
 declare -a laptop_packages=(
@@ -61,11 +62,7 @@ declare -a laptop_packages=(
 )
 
 declare -a aur_packages=(
-"protonmail-bridge"
 "spotify"
-"gotop"
-"cava"
-"grimshot"
 )
 
 # Update system and repos
@@ -78,15 +75,18 @@ if [[ $LAPTOP == true ]]; then
     sudo pacman -S ${laptop_packages[@]} --noconfirm
 fi
 
-# Install AUR helper (yay)
+# Install AUR helper (paru)
 cd /opt &&\
-sudo git clone https://aur.archlinux.org/yay.git &&\
-sudo chown -R "$(whoami)":"$(id -gn "$(whoami)")" ./yay
-cd yay
+sudo git clone https://aur.archlinux.org/paru.git &&\
+sudo chown -R "$(whoami)":"$(id -gn "$(whoami)")" ./paru
+cd paru
 makepkg -si
 
 # Install AUR packages
-yay -S ${aur_packages[@]}
+paru -S ${aur_packages[@]}
+
+# Change default shell to zsh
+chsh -s /bin/zsh
 
 # Setup configuration files
 rm -f ~/.bashrc ~/.bash_profile ~/.zshrc ~/.zprofile

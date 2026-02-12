@@ -10,7 +10,7 @@ font pango:DejaVu Sans Mono 12
 default_border pixel 1
 smart_gaps off
 hide_edge_borders smart
-gaps inner 5
+gaps inner 10
 gaps outer 5
 
 # SwayFX
@@ -175,7 +175,7 @@ for_window [app_id="spotify"] move to workspace $ws10
 # Floating windows
 for_window [app_id="qalculate-gtk"] floating enable
 for_window [app_id="pavucontrol"] floating enable
-for_window [title="Color Picker"] floating enable
+for_window [title="color"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 
