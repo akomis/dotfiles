@@ -19,6 +19,7 @@ declare -a packages=(
 "neovim"
 "zsh"
 "vlc"
+"vlc-plugins-all"
 "jq"
 "tldr"
 "git"

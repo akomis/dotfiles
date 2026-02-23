@@ -2,8 +2,8 @@
     "layer": "top",
     "position": "top",
 
-    "modules-left": ["clock", "custom/prev", "custom/spotify", "custom/next", "pulseaudio/slider"],
-    "modules-center": ["sway/workspaces"],
+    "modules-left": ["sway/workspaces", "custom/prev", "custom/spotify", "custom/next", "pulseaudio/slider"],
+    "modules-center": ["clock"],
     "modules-right": ["network", "disk", "memory", "cpu", "temperature", "battery"],
 
     "sway/workspaces": {

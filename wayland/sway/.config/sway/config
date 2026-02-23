@@ -30,7 +30,7 @@ client.background       $bg
 
 # Output configuration
 output HDMI-A-2 resolution 2560x1440 position 0 0
-output HDMI-A-1 resolution 2560x1440 position 2560 0
+output HDMI-A-1 mode 2560x1440@144Hz position 2560 0
 output * bg ~/.wallpaper center $bg
 
 # Input configuration
@@ -102,7 +102,7 @@ workspace $ws1 output HDMI-A-2
 workspace $ws2 output HDMI-A-2
 workspace $ws3 output HDMI-A-2
 workspace $ws4 output HDMI-A-2
-workspace $ws5 output HDMI-A-2
+workspace $ws5 output HDMI-A-1
 workspace $ws6 output HDMI-A-1
 workspace $ws7 output HDMI-A-1
 workspace $ws8 output HDMI-A-1
@@ -165,9 +165,6 @@ bindsym $mod+Shift+p exec pavucontrol
 bindsym $mod+Shift+c exec qalculate-gtk
 bindsym $mod+Shift+d exec thunar
 
-# Disable ctrl+d
-bindsym ctrl+d exec /bin/true
-
 # Window assignments
 for_window [app_id="signal"] move to workspace $ws5
 for_window [app_id="spotify"] move to workspace $ws10
@@ -175,7 +172,7 @@ for_window [app_id="spotify"] move to workspace $ws10
 # Floating windows
 for_window [app_id="qalculate-gtk"] floating enable
 for_window [app_id="pavucontrol"] floating enable
-for_window [title="color"] floating enable
+for_window [app_id="wl-color-picker"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 
@@ -191,5 +188,4 @@ exec udiskie
 # App launches
 exec swaymsg "workspace $ws2; exec firefox"
 exec swaymsg "workspace $ws3; exec code"
-exec spotify
 exec signal-desktop
