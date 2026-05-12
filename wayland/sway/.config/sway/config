@@ -142,10 +142,10 @@ bindsym $mod+Shift+i reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
 
 # Resize
-bindsym $mod+Left resize shrink width 2 px
-bindsym $mod+Down resize grow height 2 px
-bindsym $mod+Up resize shrink height 2 px
-bindsym $mod+Right resize grow width 2 px
+bindsym $mod+Left resize shrink width 20 px
+bindsym $mod+Down resize grow height 20 px
+bindsym $mod+Up resize shrink height 20 px
+bindsym $mod+Right resize grow width 20 px
 
 # Custom keybindings
 bindsym $mod+ctrl+q exec swaylock
@@ -187,5 +187,4 @@ exec udiskie
 
 # App launches
 exec swaymsg "workspace $ws2; exec firefox"
-exec swaymsg "workspace $ws3; exec code"
 exec signal-desktop
