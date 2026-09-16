@@ -29,18 +29,15 @@ client.urgent           $bg     $bg     $fg   $urgent   $urgent
 client.background       $bg
 
 # Output configuration
-output HDMI-A-2 resolution 2560x1440 position 0 0
-output HDMI-A-1 mode 2560x1440@144Hz position 2560 0
+# Outputs and workspace-to-output assignments are configured dynamically
+# by ~/.config/sway/scripts/outputs.sh so the config works on any machine.
 output * bg ~/.wallpaper center $bg
+exec_always ~/.config/sway/scripts/outputs.sh
 
 # Input configuration
 input type:keyboard {
     xkb_layout "us,gr"
     xkb_options "grp:win_space_toggle"
-}
-
-input type:touchpad {
-    events disabled
 }
 
 # Floating modifier
@@ -97,18 +94,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Assign workspaces to outputs (1-5 left, 6-10 right)
-workspace $ws1 output HDMI-A-2
-workspace $ws2 output HDMI-A-2
-workspace $ws3 output HDMI-A-2
-workspace $ws4 output HDMI-A-2
-workspace $ws5 output HDMI-A-1
-workspace $ws6 output HDMI-A-1
-workspace $ws7 output HDMI-A-1
-workspace $ws8 output HDMI-A-1
-workspace $ws9 output HDMI-A-1
-workspace $ws10 output HDMI-A-1
-
 # Switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -150,13 +135,14 @@ bindsym $mod+Right resize grow width 20 px
 # Custom keybindings
 bindsym $mod+ctrl+q exec swaylock
 bindsym $mod+Shift+s exec grimshot copy area
+bindsym $mod+ctrl+s exec grimshot save area
 bindsym $mod+Shift+Escape exec shutdown -h now
 bindsym $mod+Shift+F12 exec reboot
 
 # Spotify controls
 bindsym $mod+m exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-bindsym $mod+less exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-bindsym $mod+greater exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym $mod+comma exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod+period exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
 # App launchers
 bindsym $mod+Shift+f exec $BROWSER
@@ -168,11 +154,12 @@ bindsym $mod+Shift+d exec thunar
 # Window assignments
 for_window [app_id="signal"] move to workspace $ws5
 for_window [app_id="spotify"] move to workspace $ws10
+for_window [class="Spotify"] move to workspace $ws10
 
 # Floating windows
 for_window [app_id="qalculate-gtk"] floating enable
 for_window [app_id="pavucontrol"] floating enable
-for_window [app_id="wl-color-picker"] floating enable
+for_window [app_id="zenity"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 
@@ -184,7 +171,12 @@ bar {
 # Autostart
 exec mako
 exec udiskie
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec gnome-keyring-daemon --start --components=secrets
 
 # App launches
-exec swaymsg "workspace $ws2; exec firefox"
+exec swaymsg "workspace $ws2; exec firefox https://notion.so https://eu.posthog.com/project/159502/dashboard/622008 https://mail.proton.me/u/9/inbox https://mail.google.com/mail/u/0/#inbox https://mail.google.com/mail/u/1/#inbox"
 exec signal-desktop
+
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway

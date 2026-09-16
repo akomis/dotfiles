@@ -8,7 +8,7 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/projects/scripts:$HOME/.yarn/bin"
 # Wayland environment
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_TYPE=wayland
-export MOZ_ENABLE_WAYLAND=1
+export MOZ_ENABLE_WAYLAND=0
 export QT_QPA_PLATFORM=wayland
 export SDL_VIDEODRIVER=wayland
 export GBM_BACKEND=nvidia-drm

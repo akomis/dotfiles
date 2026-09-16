@@ -20,7 +20,7 @@ main() {
     echo "Not playing"; exit
   fi
 
-  echo "${*:-%artist% – %title%}" | sed "s/%artist%/$artist/g;s/%title%/$title/g;s/%album%/$album/g"i | sed "s/\&/\&/g" | sed "s#\/#\/#g"
+  echo "${*:-%artist% – %title%}" | sed "s/%artist%/$artist/g;s/%title%/$title/g;s/%album%/$album/g" | sed "s/\&/\&/g" | sed "s#\/#\/#g"
 
 }
 
